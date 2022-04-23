@@ -1,0 +1,16 @@
+## SWING NIMBUS THEME
+-Dswing.defaultlaf=javax.swing.plaf.nimbus.NimbusLookAndFeel
+
+## ORACLE DATABASE PARAMETERS
+MAVEN:	com.oracle.database.jdbc:ojdbc11:21.5.0.0
+DRIVER:	oracle.jdbc.driver.OracleDriver
+URL:	jdbc:oracle:thin:@192.168.1.83:1521:xe
+
+## MYSQL DATABASE PARAMETERS
+MAVEN: 	mysql:mysql-connector-java:8.0.27
+DRIVER:	com.mysql.cj.jdbc.Driver
+URL:	jdbc:mysql://localhost:3306/empleados
+
+NOTA:   A partir del JDBC 4.0 y JDK 1.6 ya no se requiere la carga explícita del driver
+        String driver = "com.mysql.cj.jdbc.Driver";
+        Class.forName(driver);
